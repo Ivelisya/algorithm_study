@@ -22,4 +22,36 @@ using namespace std;
 #include <vector>
 vector<vector<int>> construct2DArray(vector<int> &original, int m, int n)
 {
+    int size = original.size();
+    if (size != (n * m))
+        return vector<vector<int>>();
+    vector<vector<int>> twoDArray;
+    int index = 0;
+    int row = n;
+    // m为 vec的个数 n为vec内的元素个数
+    while (m--)
+    {
+        vector<int> vec;
+        n = row;
+        while (n--)
+        {
+            vec.push_back(original[index]);
+            index++;
+        }
+        twoDArray.push_back(vec);
+    }
+    return twoDArray;
+    // m行 n列
 }
+// 官方解法
+/*
+vector<vector<int>> construct2DArray(vector<int>& original, int m, int n) {
+        vector<vector<int>>ans;
+        if(original.size() != m*n)
+            return ans;
+        for(auto it = original.begin();it != original.end();it += n){
+            ans.emplace_back(it,it+n);
+        }
+        return ans;
+    }
+*/
