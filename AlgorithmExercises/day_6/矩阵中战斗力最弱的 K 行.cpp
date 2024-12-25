@@ -44,4 +44,36 @@ public:
         return result;
     }
 };
+
+
+
+class Solution {
+public:
+    vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
+        // 使用一个vector<pair<int,int>>来统计军人的个数
+        vector<pair<int, int>> soldierCount;
+        for (int i = 0; i < mat.size(); ++i) {
+            int l = 0, r = mat[i].size() - 1, pos = -1;
+            while (l <= r) {
+                int mid = (l + r) / 2;
+                if (mat[i][mid] == 0) {
+                    r = mid - 1;
+                } else {
+                    pos = mid;
+                    l = mid + 1;
+                }
+            }
+            soldierCount.emplace_back(pos + 1,i);
+        }
+
+        // 进行排序
+        priority_queue q(greater<pair<int,int>>(),move(soldierCount));
+            vector<int> ans;
+            for (int i = 0; i < k; ++i) {
+                ans.push_back(q.top().second);
+                q.pop();
+            }
+            return ans;
+    }
+    };
 #endif
