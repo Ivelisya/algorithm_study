@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/20212/Desktop/Github/algorithm_study/AlgorithmExercises/day_10",
-      "program": "c:/Users/20212/Desktop/Github/algorithm_study/AlgorithmExercises/day_10/build/Debug/outDebug",
+      "cwd": "c:/Users/20212/Desktop/Github/algorithm_study/AlgorithmExercises/每日练习/day_12",
+      "program": "c:/Users/20212/Desktop/Github/algorithm_study/AlgorithmExercises/每日练习/day_12/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
