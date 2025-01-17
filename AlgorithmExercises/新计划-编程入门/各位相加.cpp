@@ -17,3 +17,12 @@
 输出: 0
  3
  1 1
+class Solution {
+public:
+    
+    int addDigits(int num) {
+        return (num - 1) % 9 + 1;
+    }
+};
+
+#endif
