@@ -15,6 +15,7 @@ public:
             //进来
             if(blocks[i] == 'W') count++;
             if(i < k - 1) continue;
+            
             if(i == k - 1) ans = count; //当刚好为k时的操作数
             ans = min(ans,count);
             //出去
