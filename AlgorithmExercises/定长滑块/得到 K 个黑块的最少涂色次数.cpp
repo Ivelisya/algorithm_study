@@ -13,6 +13,7 @@ public:
         //计数 k 内 w 的 最少个数
         for(int i = 0;i < blocks.size();++i){
             //进来
+
             if(blocks[i] == 'W') count++;
             if(i < k - 1) continue;
             
