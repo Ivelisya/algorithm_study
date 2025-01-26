@@ -20,6 +20,7 @@ public:
 
                            : baseSatisfaction += customers[i];
             if (i < minutes - 1)
+
                 continue;
 
             maxExtraSatisfaction = max(maxExtraSatisfaction, extraSatisfaction);
