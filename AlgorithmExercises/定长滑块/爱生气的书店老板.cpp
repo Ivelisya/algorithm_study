@@ -20,10 +20,11 @@ public:
                            : baseSatisfaction += customers[i];
             if (i < minutes - 1)
                 continue;
+
             maxExtraSatisfaction = max(maxExtraSatisfaction, extraSatisfaction);
             // 出
             grumpy[i - minutes + 1] == 1
-            
+
                 ? extraSatisfaction -= customers[i - minutes + 1]
                 : extraSatisfaction;
         }
