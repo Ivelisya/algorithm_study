@@ -17,6 +17,7 @@ public:
         for (int i = 0; i < grumpy.size(); ++i) {
             // 进
             grumpy[i] == 1 ? extraSatisfaction += customers[i]
+
                            : baseSatisfaction += customers[i];
             if (i < minutes - 1)
                 continue;
