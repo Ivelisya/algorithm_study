@@ -12,7 +12,7 @@ public:
             std::bitset<32> bs(i);
             std::string binaryStr = bs.to_string().substr(32 - k);
             unMap[binaryStr] = 0; // 初始化计数为 0
-        }
+        } 
 
         std::string testStr;
         for (int i = 0; i < s.size(); ++i) {
