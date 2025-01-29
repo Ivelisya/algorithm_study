@@ -21,6 +21,7 @@ public:
             if (i < k - 1)
                 continue; // 窗口长度不够，跳过
 
+
             // 窗口长度达到 k，更新 unMap 中对应子串的计数
             if (unMap.find(testStr) != unMap.end()) {
                 unMap[testStr] = 1; // 标记该子串已出现
