@@ -28,8 +28,10 @@ public:
             result[i - k] = (num/(2*k + 1));
 
             //出去
+            
             //如果右边不足
-            num -= nums[i - 2*k];
+            num -= nums [i - 2*k];
+
         }
         return result;
     }
