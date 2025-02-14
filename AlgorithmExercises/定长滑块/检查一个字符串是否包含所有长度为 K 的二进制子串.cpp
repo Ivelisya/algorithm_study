@@ -55,5 +55,4 @@ class Solution {
             return seen.size() == numStrings;
         }
     };
-
 #endif
