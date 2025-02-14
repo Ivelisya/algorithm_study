@@ -41,4 +41,19 @@ public:
     }
 };
 
+
+
+class Solution {
+    public:
+        bool hasAllCodes(string s, int k) {
+            if(s.size() < k) return false;
+            std::unordered_set<string> seen;
+            for(int i = 0;i <= s.size() - k;++i){
+                seen.insert(s.substr(i,k));
+            }
+            int numStrings = 1 << k;
+            return seen.size() == numStrings;
+        }
+    };
+
 #endif
