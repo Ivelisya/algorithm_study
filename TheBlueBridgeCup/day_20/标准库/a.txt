@@ -1,0 +1,9 @@
+8
+push 4
+min
+remove
+remove
+push 3
+push 7
+push 2
+print 2
