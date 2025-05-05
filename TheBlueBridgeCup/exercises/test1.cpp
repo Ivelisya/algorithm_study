@@ -31,6 +31,7 @@ int main()
 {
     for (int i = 1; i <= 6; i++)
     {
+        
         cin >> a[i];
         if (a[i] >= '1' && a[i] <= '9')
         {
