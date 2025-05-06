@@ -31,7 +31,7 @@ int main()
 {
     for (int i = 1; i <= 6; i++)
     {
-        
+
         cin >> a[i];
         if (a[i] >= '1' && a[i] <= '9')
         {
@@ -59,6 +59,7 @@ int main()
             vis[b[i]]++;
         }
     }
+    
     dfs(0, 0);
     if (flag)
         cout << "YES";
