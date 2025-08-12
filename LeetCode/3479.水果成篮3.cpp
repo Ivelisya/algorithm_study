@@ -2,5 +2,5 @@
 using namespace std;
 int main()
 {
-    vector<int> in;
+    v ector<int> in;
 }
