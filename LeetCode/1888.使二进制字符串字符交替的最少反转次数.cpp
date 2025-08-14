@@ -12,6 +12,7 @@ class Solution
 public:
     int minFlips(string s)
     {
+
         int k = s.size(); // 获取原始字符串长度 n
         if (k == 0)       // 处理空字符串的边界情况
             return 0;
